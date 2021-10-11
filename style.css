@@ -1,0 +1,243 @@
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+section{
+    padding-left: 30px;
+    padding-right:30px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+h3{
+    font-weight:400;
+    font-size: 25px;
+}
+
+
+
+/*--------------------- logo ---------------------*/
+#logo-img{
+    max-width: 100px ;
+    max-height: auto;
+
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    left: 20px;
+}
+
+#logo{
+    height: 80px;
+}
+
+/*--------------------- area 1 ---------------------*/
+.grid-half{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "A1 A2";
+
+}
+
+.grid-half-1{
+    grid-area:A1;
+}
+
+.grid-half-2{
+    grid-area: A2;
+    padding-right:20px;
+    padding-top:80px;
+}
+
+#area-1 h1{
+    color: #fe4400;
+}
+
+#area-1 img {
+    max-height: 600px;
+    max-width:auto;
+}
+
+#btn-saiba{
+    background-color:  #EF653C;
+    color: #FFF;
+    border-radius: 20px;
+    border-style:none;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    font-size: 20px;
+}
+#btn-saiba:hover{
+    background-color:  #fe4400;
+    cursor:pointer;
+}
+
+/*--------------------- area 2 ---------------------*/
+.grid2-5{
+
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% 20% 10% 50% 10%;
+    grid-template-areas: 
+        ". H2 H2 H2 Img-area-2"
+        ". H1 H1 H1 Img-area-2"
+        ". . . . Img-area-2"
+        "txt txt txt txt Img-area-2"
+        ". . . . Img-area-2"                   
+}
+
+#area-2 h1{
+    grid-area: H1;
+    text-align: center;
+}
+#area-2 h2{
+    grid-area: H2;
+    text-align: center;
+}
+
+#area-2 p{
+    grid-area: txt;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+#area-2 img{
+    grid-area: Img-area-2;
+    max-height: 300px;
+    max-width:auto;
+
+}
+
+#area-2{
+    background-color: #4B4FA1;
+    color:#FFF;
+
+}
+
+/*--------------------- area 3 ---------------------*/
+#area-3{
+    background-color:#EF653C;
+    color:#FFF;
+}
+
+.grid3-5{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% 10% 10% 60% 10%;
+    grid-template-areas: 
+        "Img-area-3 H2 H2 H2 ."
+        "Img-area-3 H1 H1 H1 ."
+        "Img-area-3 . . . ."
+        "Img-area-3 txt txt txt txt "
+        "Img-area-3 . . . . "
+}
+
+#area-3 h1{
+    grid-area: H1;
+    text-align: center;
+}
+#area-3 h2{
+    grid-area: H2;
+    text-align: center;
+}
+
+#lateral-3{
+    grid-area: txt;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#area-3 img{
+    grid-area: Img-area-3;
+    max-height: 400px;
+    max-width:auto;
+    padding: 10px;
+}
+
+#btn-agende{
+    background-color:  #5a5da3;
+    color: #FFF;
+    border-radius: 20px;
+    border-style:none;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    font-size: 20px;
+}
+#btn-agende:hover{
+    background-color:  #4B4FA1;
+    cursor:pointer;
+}
+
+
+/*--------------------- area 4 ---------------------*/
+#area-4{
+    background-color:#E5E5E5;
+}
+
+.grid4-5{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% 20% 10% 60%;
+    grid-template-areas: 
+        ". H2 H2 H2 Img-area-4"
+        ". H1 H1 H1 Img-area-4"
+        ". . . . Img-area-4"
+        "txt txt txt txt Img-area-4"                 
+}
+
+#area-4 h1{
+    grid-area: H1;
+    text-align: center;
+}
+#area-4 h2{
+    grid-area: H2;
+    text-align: center;
+}
+
+#area-4 h3{
+    grid-area: txt;
+}
+
+#area-4 img{
+    grid-area: Img-area-4;
+    max-height: 300px;
+    max-width:auto;
+    padding: 10px;
+}
+
+/* --------------------- footer --------------------- */
+footer{
+    padding-top: 20px;
+    background-color: #303033;
+    color:#FFF;
+    text-align: center;}
+
+#logo-footer{
+    max-width: 150px;
+    max-height: auto;
+}
+
+footer a img{
+    max-width: 30px;
+    max-height: auto;
+    padding: 5px;
+}
